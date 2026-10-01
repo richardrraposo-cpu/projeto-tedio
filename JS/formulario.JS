@@ -1,6 +1,11 @@
     // Envia o formulário
-import function enviarFormulario(event) {
-    event.preventDefault();
+
+
+    
+     import { mostrarToast } from './interface.JS';
+     export function enviarFormulario(event) {
+{
+    event.preventDefault(); }
 
     const campos = event.target.querySelectorAll("input, textarea");
     let formularioValido = true;
@@ -16,7 +21,13 @@ import function enviarFormulario(event) {
         return;
     }
 
-     import{ mostrarToast } from './inteface.js';
+    
+    // restante do seu código...
+
+    if (!formularioValido) {
+        mostrarToast("⚠ Preencha os campos corretamente.");
+        return;
+    }
 
     event.target.reset();
 }
