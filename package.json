@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- 
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"},
-
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/richardrraposo-cpu/projeto-tedio.git"
@@ -23,18 +22,5 @@
   "homepage": "https://github.com/richardrraposo-cpu/projeto-tedio#readme",
   "devDependencies": {
     "vite": "^8.3.1"
-  },
-  "dependencies": {
-    "detect-libc": "^2.1.2",
-    "fdir": "^6.5.0",
-    "lightningcss": "^1.33.0",
-    "lightningcss-win32-x64-msvc": "^1.33.0",
-    "nanoid": "^3.3.19",
-    "picocolors": "^1.1.1",
-    "picomatch": "^4.0.7",
-    "postcss": "^8.5.28",
-    "rolldown": "^1.2.11",
-    "source-map-js": "^1.2.1",
-    "tinyglobby": "^0.2.17"
   }
 }
