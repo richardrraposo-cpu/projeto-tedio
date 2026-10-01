@@ -1,4 +1,4 @@
-import { navegar, abrirMenu } from "./navegacao.js";
+import { navegar, abrirMenu } from "./NAVEGAÇÃO.js";
 
 import {
     abrirModal,

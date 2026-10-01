@@ -2,6 +2,7 @@
     export function abrirModal() {
         const modal = document.getElementById("modal");
         modal.classList.add("modal-aberto");
+        modal.setAttribute("aria-hidden", "false");
     }
 
 
@@ -9,6 +10,7 @@
     export function fecharModal() {
         const modal = document.getElementById("modal");
         modal.classList.remove("modal-aberto");
+        modal.setAttribute("aria-hidden", "true");
     }
 
 
