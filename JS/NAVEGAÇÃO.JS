@@ -36,5 +36,14 @@
     // Abre e fecha o menu no celular
    export function abrirMenu() {
         const menu = document.getElementById("menu");
-        menu.classList.toggle("menu-aberto");
+       const botao = document.querySelector(".menu-hamburguer");
+       
+       menu.classList.toggle("menu-aberto");
+
+       const aberto = menu.classList.contains("menu-aberto");
+       botao.setAttribute("aria-expanded", aberto);
+       botao.setAttribute(
+        "arial-label",
+        aberto ? "fechar menu" : "abrir menu"
+       )
     }
